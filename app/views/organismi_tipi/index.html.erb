@@ -1,0 +1,27 @@
+<h1>Listing organismi_tipi</h1>
+
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Descrizione</th>
+    <th>Priorita</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organismi_tipi.each do |organismi_tipi| %>
+  <tr>
+    <td><%= organismi_tipi.tipo %></td>
+    <td><%= organismi_tipi.descrizione %></td>
+    <td><%= organismi_tipi.priorita %></td>
+    <td><%= link_to 'Show', organismi_tipi %></td>
+    <td><%= link_to 'Edit', edit_organismi_tipi_path(organismi_tipi) %></td>
+    <td><%= link_to 'Destroy', organismi_tipi, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organismi tipi', new_organismi_tipi_path %>

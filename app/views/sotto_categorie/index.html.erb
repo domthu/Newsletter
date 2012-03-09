@@ -1,0 +1,35 @@
+<h1>Listing sotto_categorie</h1>
+
+<table>
+  <tr>
+    <th>Categorie</th>
+    <th>Id</th>
+    <th>Ca categoria</th>
+    <th>Sottocategoria</th>
+    <th>Protetto</th>
+    <th>Ordinamento</th>
+    <th>Data scadenza</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sotto_categorie.each do |sotto_categoria| %>
+  <tr>
+    <td><%= sotto_categoria.categorie_id %></td>
+    <td><%= sotto_categoria.id %></td>
+    <td><%= sotto_categoria.ca_categoria %></td>
+    <td><%= sotto_categoria.sottocategoria %></td>
+    <td><%= sotto_categoria.protetto %></td>
+    <td><%= sotto_categoria.ordinamento %></td>
+    <td><%= sotto_categoria.data_scadenza %></td>
+    <td><%= link_to 'Show', sotto_categoria %></td>
+    <td><%= link_to 'Edit', edit_sotto_categoria_path(sotto_categoria) %></td>
+    <td><%= link_to 'Destroy', sotto_categoria, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sotto categoria', new_sotto_categoria_path %>

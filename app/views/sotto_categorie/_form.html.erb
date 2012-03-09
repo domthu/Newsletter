@@ -1,0 +1,45 @@
+<%= form_for(@sotto_categoria) do |f| %>
+  <% if @sotto_categoria.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sotto_categoria.errors.count, "error") %> prohibited this sotto_categoria from being saved:</h2>
+
+      <ul>
+      <% @sotto_categoria.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :categorie_id %><br />
+    <%= f.text_field :categorie_id %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :ca_categoria %><br />
+    <%= f.text_field :ca_categoria %>
+  </div>
+  <div class="field">
+    <%= f.label :sottocategoria %><br />
+    <%= f.text_field :sottocategoria %>
+  </div>
+  <div class="field">
+    <%= f.label :protetto %><br />
+    <%= f.check_box :protetto %>
+  </div>
+  <div class="field">
+    <%= f.label :ordinamento %><br />
+    <%= f.text_field :ordinamento %>
+  </div>
+  <div class="field">
+    <%= f.label :data_scadenza %><br />
+    <%= f.datetime_select :data_scadenza %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

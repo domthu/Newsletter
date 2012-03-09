@@ -1,0 +1,29 @@
+<%= form_for(@organismo) do |f| %>
+  <% if @organismo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@organismo.errors.count, "error") %> prohibited this organismo from being saved:</h2>
+
+      <ul>
+      <% @organismo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :organismo %><br />
+    <%= f.text_field :organismo %>
+  </div>
+  <div class="field">
+    <%= f.label :sigla %><br />
+    <%= f.text_field :sigla %>
+  </div>
+  <div class="field">
+    <%= f.label :se_visibile %><br />
+    <%= f.check_box :se_visibile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

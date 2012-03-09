@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @allegato.id %>
+</p>
+
+<p>
+  <b>Contenuti:</b>
+  <%= @allegato.contenuti_id %>
+</p>
+
+<p>
+  <b>Descrizione:</b>
+  <%= @allegato.descrizione %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @allegato.url %>
+</p>
+
+<p>
+  <b>Se protetto:</b>
+  <%= @allegato.se_protetto %>
+</p>
+
+
+<%= link_to 'Edit', edit_allegato_path(@allegato) %> |
+<%= link_to 'Back', allegati_path %>

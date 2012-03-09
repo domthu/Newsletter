@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @sezione.id %>
+</p>
+
+<p>
+  <b>Sezione:</b>
+  <%= @sezione.sezione %>
+</p>
+
+<p>
+  <b>Ordinamento:</b>
+  <%= @sezione.ordinamento %>
+</p>
+
+<p>
+  <b>Se visibile:</b>
+  <%= @sezione.se_visibile %>
+</p>
+
+<p>
+  <b>Immagine:</b>
+  <%= @sezione.immagine %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%= @sezione.style %>
+</p>
+
+
+<%= link_to 'Edit', edit_sezione_path(@sezione) %> |
+<%= link_to 'Back', sezioni_path %>

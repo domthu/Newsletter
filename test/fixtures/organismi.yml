@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  organismo: MyString
+  sigla: MyString
+  se_visibile: false
+
+two:
+  organismo: MyString
+  sigla: MyString
+  se_visibile: false

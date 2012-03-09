@@ -1,0 +1,31 @@
+<h1>Listing allegati</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Contenuti</th>
+    <th>Descrizione</th>
+    <th>Url</th>
+    <th>Se protetto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @allegati.each do |allegato| %>
+  <tr>
+    <td><%= allegato.id %></td>
+    <td><%= allegato.contenuti_id %></td>
+    <td><%= allegato.descrizione %></td>
+    <td><%= allegato.url %></td>
+    <td><%= allegato.se_protetto %></td>
+    <td><%= link_to 'Show', allegato %></td>
+    <td><%= link_to 'Edit', edit_allegato_path(allegato) %></td>
+    <td><%= link_to 'Destroy', allegato, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Allegato', new_allegato_path %>

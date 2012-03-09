@@ -1,0 +1,49 @@
+<h1>Listing gruppi_utenti</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Cu categoriautente</th>
+    <th>Ragione sociale</th>
+    <th>Indirizzo</th>
+    <th>Email</th>
+    <th>Presidente</th>
+    <th>Referente</th>
+    <th>Consulente</th>
+    <th>Logo</th>
+    <th>Telefono</th>
+    <th>Telefono alt</th>
+    <th>Fax</th>
+    <th>Comunicazioni</th>
+    <th>Email alt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gruppi_utenti.each do |gruppi_utente| %>
+  <tr>
+    <td><%= gruppi_utente.id %></td>
+    <td><%= gruppi_utente.cu_categoriautente %></td>
+    <td><%= gruppi_utente.ragione_sociale %></td>
+    <td><%= gruppi_utente.indirizzo %></td>
+    <td><%= gruppi_utente.email %></td>
+    <td><%= gruppi_utente.presidente %></td>
+    <td><%= gruppi_utente.referente %></td>
+    <td><%= gruppi_utente.consulente %></td>
+    <td><%= gruppi_utente.logo %></td>
+    <td><%= gruppi_utente.telefono %></td>
+    <td><%= gruppi_utente.telefono_alt %></td>
+    <td><%= gruppi_utente.fax %></td>
+    <td><%= gruppi_utente.comunicazioni %></td>
+    <td><%= gruppi_utente.email_alt %></td>
+    <td><%= link_to 'Show', gruppi_utente %></td>
+    <td><%= link_to 'Edit', edit_gruppi_utente_path(gruppi_utente) %></td>
+    <td><%= link_to 'Destroy', gruppi_utente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gruppi utente', new_gruppi_utente_path %>

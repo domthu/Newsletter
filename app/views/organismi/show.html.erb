@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Organismo:</b>
+  <%= @organismo.organismo %>
+</p>
+
+<p>
+  <b>Sigla:</b>
+  <%= @organismo.sigla %>
+</p>
+
+<p>
+  <b>Se visibile:</b>
+  <%= @organismo.se_visibile %>
+</p>
+
+
+<%= link_to 'Edit', edit_organismo_path(@organismo) %> |
+<%= link_to 'Back', organismi_path %>

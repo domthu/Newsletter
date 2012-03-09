@@ -1,0 +1,2 @@
+module GruppiUtentiBannersHelper
+end

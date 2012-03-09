@@ -1,0 +1,29 @@
+<%= form_for(@organismi_tipi) do |f| %>
+  <% if @organismi_tipi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@organismi_tipi.errors.count, "error") %> prohibited this organismi_tipi from being saved:</h2>
+
+      <ul>
+      <% @organismi_tipi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :descrizione %><br />
+    <%= f.text_field :descrizione %>
+  </div>
+  <div class="field">
+    <%= f.label :priorita %><br />
+    <%= f.text_field :priorita %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

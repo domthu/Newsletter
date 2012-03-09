@@ -1,0 +1,27 @@
+<h1>Listing province</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Sigla</th>
+    <th>Provincia</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @province.each do |provincia| %>
+  <tr>
+    <td><%= provincia.id %></td>
+    <td><%= provincia.sigla %></td>
+    <td><%= provincia.provincia %></td>
+    <td><%= link_to 'Show', provincia %></td>
+    <td><%= link_to 'Edit', edit_provincia_path(provincia) %></td>
+    <td><%= link_to 'Destroy', provincia, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Provincia', new_provincia_path %>

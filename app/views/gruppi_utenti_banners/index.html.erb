@@ -1,0 +1,27 @@
+<h1>Listing gruppi_utenti_banners</h1>
+
+<table>
+  <tr>
+    <th>Gruppi utenti</th>
+    <th>Banners</th>
+    <th>Se visibile</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gruppi_utenti_banners.each do |gruppi_utenti_banner| %>
+  <tr>
+    <td><%= gruppi_utenti_banner.gruppi_utenti_id %></td>
+    <td><%= gruppi_utenti_banner.banners_id %></td>
+    <td><%= gruppi_utenti_banner.se_visibile %></td>
+    <td><%= link_to 'Show', gruppi_utenti_banner %></td>
+    <td><%= link_to 'Edit', edit_gruppi_utenti_banner_path(gruppi_utenti_banner) %></td>
+    <td><%= link_to 'Destroy', gruppi_utenti_banner, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gruppi utenti banner', new_gruppi_utenti_banner_path %>

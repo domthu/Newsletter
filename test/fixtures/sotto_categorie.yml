@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  categorie_id: 1
+  id: 1
+  ca_categoria: MyString
+  sottocategoria: MyString
+  protetto: false
+  ordinamento: 1
+  data_scadenza: 2012-03-07 00:35:45
+
+two:
+  categorie_id: 1
+  id: 1
+  ca_categoria: MyString
+  sottocategoria: MyString
+  protetto: false
+  ordinamento: 1
+  data_scadenza: 2012-03-07 00:35:45

@@ -1,0 +1,41 @@
+<%= form_for(@spiga) do |f| %>
+  <% if @spiga.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spiga.errors.count, "error") %> prohibited this spiga from being saved:</h2>
+
+      <ul>
+      <% @spiga.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :utenti_id %><br />
+    <%= f.text_field :utenti_id %>
+  </div>
+  <div class="field">
+    <%= f.label :contenuti_id %><br />
+    <%= f.text_field :contenuti_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :numero_spighe %><br />
+    <%= f.text_field :numero_spighe %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inserimento %><br />
+    <%= f.datetime_select :data_inserimento %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

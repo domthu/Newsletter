@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gruppi utenti:</b>
+  <%= @gruppi_utenti_banner.gruppi_utenti_id %>
+</p>
+
+<p>
+  <b>Banners:</b>
+  <%= @gruppi_utenti_banner.banners_id %>
+</p>
+
+<p>
+  <b>Se visibile:</b>
+  <%= @gruppi_utenti_banner.se_visibile %>
+</p>
+
+
+<%= link_to 'Edit', edit_gruppi_utenti_banner_path(@gruppi_utenti_banner) %> |
+<%= link_to 'Back', gruppi_utenti_banners_path %>

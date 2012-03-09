@@ -1,0 +1,31 @@
+<h1>Listing edizioni</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Titolo</th>
+    <th>Data dal</th>
+    <th>Data al</th>
+    <th>Search key</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @edizioni.each do |edizione| %>
+  <tr>
+    <td><%= edizione.id %></td>
+    <td><%= edizione.titolo %></td>
+    <td><%= edizione.data_dal %></td>
+    <td><%= edizione.data_al %></td>
+    <td><%= edizione.search_key %></td>
+    <td><%= link_to 'Show', edizione %></td>
+    <td><%= link_to 'Edit', edit_edizione_path(edizione) %></td>
+    <td><%= link_to 'Destroy', edizione, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Edizione', new_edizione_path %>

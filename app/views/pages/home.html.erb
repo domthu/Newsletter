@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+ <%= title %>
+ 
+  </head>
+  <body>
+    <h1><%# @title %></h1>
+    <p>
+      This is the home page --- sto facendo una prova...
+	  <br />
+<ul>
+<% for x in @sezioni %>
+	<li><%=link_to  x.sezione, :controller=>"sezioni", :action=>"show", :id=>x.id %> ( visibile?: <%= x.se_visibile %>)
+    <% if x.get_categorie.count() > 0 %>
+        <ul>
+        <% for categoria in x.get_categorie  %>
+            <li style="list-style: square inside; padding:10px; color:red;"><%=link_to  categoria.categoria, :controller=>"categorie", :action=>"show", :id=>categoria.id %></li>
+        <% end %>
+        </ul>
+    <% end %>
+    </li>
+
+<% end %>
+</ul>
+
+	  
+    </p>
+	<p>       <a href="http://localhost:3000/pages/about">goto... about</a>.
+	   <a href="http://localhost:3000/pages/contatti">goto... contatti</a>.
+	   </p> 
+   
+  </body>
+</html>
