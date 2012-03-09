@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @categoria.id %>
+</p>
+
+<p>
+  <b>Categoria:</b>
+  <%= @categoria.categoria %>
+</p>
+
+<p>
+  <b>Ca sezione:</b>
+  <%= @categoria.ca_sezione %>
+</p>
+
+<p>
+  <b>Protetto:</b>
+  <%= @categoria.protetto %>
+</p>
+
+<p>
+  <b>Ordinamento:</b>
+  <%= @categoria.ordinamento %>
+</p>
+
+<p>
+  <b>Ca nuovilavori:</b>
+  <%= @categoria.ca_nuovilavori %>
+</p>
+
+<p>
+  <b>Sezioni:</b>
+  <%= @categoria.sezioni_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_categoria_path(@categoria) %> |
+<%= link_to 'Back', categorie_path %>

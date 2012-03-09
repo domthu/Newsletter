@@ -1,0 +1,35 @@
+<h1>Listing categorie</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Categoria</th>
+    <th>Ca sezione</th>
+    <th>Protetto</th>
+    <th>Ordinamento</th>
+    <th>Ca nuovilavori</th>
+    <th>Sezioni</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categorie.each do |categoria| %>
+  <tr>
+    <td><%= categoria.id %></td>
+    <td><%= categoria.categoria %></td>
+    <td><%= categoria.ca_sezione %></td>
+    <td><%= categoria.protetto %></td>
+    <td><%= categoria.ordinamento %></td>
+    <td><%= categoria.ca_nuovilavori %></td>
+    <td><%= categoria.sezioni_id %></td>
+    <td><%= link_to 'Show', categoria %></td>
+    <td><%= link_to 'Edit', edit_categoria_path(categoria) %></td>
+    <td><%= link_to 'Destroy', categoria, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Categoria', new_categoria_path %>

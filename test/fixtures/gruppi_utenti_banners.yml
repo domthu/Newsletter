@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gruppi_utenti_id: 1
+  banners_id: 1
+  se_visibile: false
+
+two:
+  gruppi_utenti_id: 1
+  banners_id: 1
+  se_visibile: false

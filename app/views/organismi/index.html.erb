@@ -1,0 +1,27 @@
+<h1>Listing organismi</h1>
+
+<table>
+  <tr>
+    <th>Organismo</th>
+    <th>Sigla</th>
+    <th>Se visibile</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organismi.each do |organismo| %>
+  <tr>
+    <td><%= organismo.organismo %></td>
+    <td><%= organismo.sigla %></td>
+    <td><%= organismo.se_visibile %></td>
+    <td><%= link_to 'Show', organismo %></td>
+    <td><%= link_to 'Edit', edit_organismo_path(organismo) %></td>
+    <td><%= link_to 'Destroy', organismo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organismo', new_organismo_path %>

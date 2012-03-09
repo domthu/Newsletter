@@ -1,0 +1,45 @@
+<h1>Listing gruppi_banners</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Espositore</th>
+    <th>Url</th>
+    <th>Priorita</th>
+    <th>Posizione</th>
+    <th>Se visibile</th>
+    <th>Banner</th>
+    <th>Impressions</th>
+    <th>Clicks</th>
+    <th>Didascalia</th>
+    <th>Se prima pagina</th>
+    <th>Impressions history</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gruppi_banners.each do |gruppi_banner| %>
+  <tr>
+    <td><%= gruppi_banner.id %></td>
+    <td><%= gruppi_banner.espositore %></td>
+    <td><%= gruppi_banner.url %></td>
+    <td><%= gruppi_banner.priorita %></td>
+    <td><%= gruppi_banner.posizione %></td>
+    <td><%= gruppi_banner.se_visibile %></td>
+    <td><%= gruppi_banner.banner %></td>
+    <td><%= gruppi_banner.impressions %></td>
+    <td><%= gruppi_banner.clicks %></td>
+    <td><%= gruppi_banner.didascalia %></td>
+    <td><%= gruppi_banner.se_prima_pagina %></td>
+    <td><%= gruppi_banner.impressions_history %></td>
+    <td><%= link_to 'Show', gruppi_banner %></td>
+    <td><%= link_to 'Edit', edit_gruppi_banner_path(gruppi_banner) %></td>
+    <td><%= link_to 'Destroy', gruppi_banner, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gruppi banner', new_gruppi_banner_path %>

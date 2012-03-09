@@ -1,0 +1,37 @@
+<%= form_for(@allegato) do |f| %>
+  <% if @allegato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@allegato.errors.count, "error") %> prohibited this allegato from being saved:</h2>
+
+      <ul>
+      <% @allegato.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :contenuti_id %><br />
+    <%= f.text_field :contenuti_id %>
+  </div>
+  <div class="field">
+    <%= f.label :descrizione %><br />
+    <%= f.text_area :descrizione %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :se_protetto %><br />
+    <%= f.check_box :se_protetto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

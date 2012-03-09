@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+ 
+<head>
+  <title>Biblioteca</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+     <style type="text/css">
+.fs-post .layout-item-0 { padding-right: 10px;padding-left: 10px; }
+   .ie7 .fs-post .fs-layout-cell {border:none !important; padding:0 !important; }
+   .ie6 .fs-post .fs-layout-cell {border:none !important; padding:0 !important; }
+   </style>
+
+</head>
+<div id="fs-main">
+    <div class="cleared reset-box"></div>
+    <div class="fs-box fs-sheet">
+        <div class="fs-box-body fs-sheet-body">
+            <div class="fs-header">
+                <div class="fs-logo">
+                                                 <h1 class="fs-logo-name"><a href="./index.html">Fiscosport</a></h1>
+                                                                         <h2 class="fs-logo-text">Professionisti fiscali sportivi</h2>
+                                                </div>
+                
+            </div>
+            <div class="cleared reset-box"></div>
+			
+<div class="fs-bar fs-nav">
+<div class="fs-nav-outer">
+	<ul class="fs-hmenu">
+		<li>
+			<a href="./new-page.html" class="active">Page 1</a>
+			<ul>
+				<li>
+                    <a href="./new-page/new-page.html">Subpage 1</a>
+
+                </li>
+				<li>
+                    <a href="./new-page/new-page-2.html">Subpage 2</a>
+
+                </li>
+				<li>
+                    <a href="./new-page/new-page-3.html">Subpage 3</a>
+
+                </li>
+			</ul>
+		</li>	
+		<li>
+			<a href="./new-page-2.html">Page 2</a>
+		</li>	
+	</ul>
+</div>
+</div>
+<div class="cleared reset-box"></div>
+<div class="fs-layout-wrapper">
+                <div class="fs-content-layout">
+                    <div class="fs-content-layout-row">
+                        <div class="fs-layout-cell fs-content">
+<div class="fs-box fs-post">
+    <div class="fs-box-body fs-post-body"><div class="fs-post-inner fs-article">
+                                <h2 class="fs-postheader"> post header qui
+                                </h2>
+                                                <div class="fs-postcontent">fs-postcontent
+<div class="fs-content-layout"> content-layout
+    <div class="fs-content-layout-row">
+    <div class="fs-layout-cell layout-item-0" style="width: 100%;">
+        <p><img src="images/rails.png" alt="an image" id="preview-image" name="preview-image" />Enter Page content here...
+		<%= yield %>
+		</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id.</p>
+        
+        <p><a href="#">Read more</a></p>
+    </div>
+    </div>
+</div>
+<div class="fs-content-layout">
+    <div class="fs-content-layout-row">
+    <div class="fs-layout-cell layout-item-0" style="width: 50%;">
+        <ul>
+            <li>Suspendisse pharetra auctor pharetra. Nunc a sollicitudin est.</li>
+        
+            <li>Donec vel neque in neque porta venenatis sed sit amet lectus.</li>
+        
+            <li>Curabitur ullamcorper gravida felis, sit amet scelerisque lorem iaculis sed.</li>
+        </ul>
+    </div><div class="fs-layout-cell layout-item-0" style="width: 50%;">
+        <blockquote style="margin: 10px 0">
+            Nunc a sollicitudin est. Curabitur ullamcorper gravida felis, sit amet scelerisque lorem iaculis sed. Donec vel neque in neque porta venenatis sed sit amet lectus.
+        </blockquote>
+    </div>
+    </div>
+</div>
+
+                </div>
+                <div class="cleared"></div>
+                </div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+                          <div class="cleared"></div>
+                        </div>
+                        <div class="fs-layout-cell fs-sidebar1">
+				
+<%= render 'layouts/menu_laterale' %>
+				
+<div class="fs-box fs-block">
+    <div class="fs-box-body fs-block-body">
+                <div class="fs-bar fs-blockheader">
+                    <h3 class="t">Nuovo Blocco</h3>
+                </div>
+                <div class="fs-box fs-blockcontent">
+                    <div class="fs-box-body fs-blockcontent-body">
+                <p>Enter Block content here...</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris.</p>                
+                                		<div class="cleared"></div>
+                    </div>
+                </div>
+		<div class="cleared"></div>
+    </div>
+</div>
+
+                          <div class="cleared"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cleared"></div>
+            <div class="fs-footer">
+                <div class="fs-footer-body">
+                    <a href="#" class="fs-rss-tag-icon" title="RSS"></a>
+                            <div class="fs-footer-text">
+                                <p><a href="#">Link1</a> | <a href="#">Link2</a> | <a href="#">Link3</a></p>
+
+<p>Copyright specchiasoft © thualsoft 2012. All Rights Reserved.</p>
+                                                            </div>
+                    <div class="cleared"></div>
+                </div>
+            </div>
+    		<div class="cleared"></div>
+        </div>
+    </div>
+    <div class="cleared"></div>
+    <p class="fs-page-footer"></p>
+    <div class="cleared"></div>
+</div>
+
+</body>
+</html>

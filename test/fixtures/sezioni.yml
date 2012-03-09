@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  sezione: MyString
+  ordinamento: 1
+  se_visibile: false
+  immagine: MyString
+  style: MyString
+
+two:
+  id: 1
+  sezione: MyString
+  ordinamento: 1
+  se_visibile: false
+  immagine: MyString
+  style: MyString

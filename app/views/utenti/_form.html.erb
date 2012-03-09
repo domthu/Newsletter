@@ -1,0 +1,301 @@
+<%= form_for(@utente) do |f| %>
+  <% if @utente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@utente.errors.count, "error") %> prohibited this utente from being saved:</h2>
+
+      <ul>
+      <% @utente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :codice %><br />
+    <%= f.text_field :codice %>
+  </div>
+  <div class="field">
+    <%= f.label :iva %><br />
+    <%= f.text_field :iva %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :titolo %><br />
+    <%= f.text_field :titolo %>
+  </div>
+  <div class="field">
+    <%= f.label :soc %><br />
+    <%= f.text_field :soc %>
+  </div>
+  <div class="field">
+    <%= f.label :organismo %><br />
+    <%= f.text_field :organismo %>
+  </div>
+  <div class="field">
+    <%= f.label :siglaorganismo %><br />
+    <%= f.text_field :siglaorganismo %>
+  </div>
+  <div class="field">
+    <%= f.label :affiliata %><br />
+    <%= f.text_field :affiliata %>
+  </div>
+  <div class="field">
+    <%= f.label :sede %><br />
+    <%= f.text_field :sede %>
+  </div>
+  <div class="field">
+    <%= f.label :indirizzo %><br />
+    <%= f.text_field :indirizzo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br />
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :pwd %><br />
+    <%= f.text_field :pwd %>
+  </div>
+  <div class="field">
+    <%= f.label :registrato %><br />
+    <%= f.text_field :registrato %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br />
+    <%= f.text_field :data %>
+  </div>
+  <div class="field">
+    <%= f.label :datascadenza %><br />
+    <%= f.datetime_select :datascadenza %>
+  </div>
+  <div class="field">
+    <%= f.label :cap %><br />
+    <%= f.text_field :cap %>
+  </div>
+  <div class="field">
+    <%= f.label :prov %><br />
+    <%= f.text_field :prov %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :pagato %><br />
+    <%= f.text_field :pagato %>
+  </div>
+  <div class="field">
+    <%= f.label :datapag %><br />
+    <%= f.datetime_select :datapag %>
+  </div>
+  <div class="field">
+    <%= f.label :notepag %><br />
+    <%= f.text_area :notepag %>
+  </div>
+  <div class="field">
+    <%= f.label :n_fatt %><br />
+    <%= f.text_field :n_fatt %>
+  </div>
+  <div class="field">
+    <%= f.label :sez %><br />
+    <%= f.text_field :sez %>
+  </div>
+  <div class="field">
+    <%= f.label :numero_pi_o_cf %><br />
+    <%= f.text_field :numero_pi_o_cf %>
+  </div>
+  <div class="field">
+    <%= f.label :campounauto %><br />
+    <%= f.text_field :campounauto %>
+  </div>
+  <div class="field">
+    <%= f.label :tariffa %><br />
+    <%= f.text_field :tariffa %>
+  </div>
+  <div class="field">
+    <%= f.label :sc %><br />
+    <%= f.text_field :sc %>
+  </div>
+  <div class="field">
+    <%= f.label :imp %><br />
+    <%= f.text_field :imp %>
+  </div>
+  <div class="field">
+    <%= f.label :iva_ %><br />
+    <%= f.text_field :iva_ %>
+  </div>
+  <div class="field">
+    <%= f.label :totale_fattura %><br />
+    <%= f.text_field :totale_fattura %>
+  </div>
+  <div class="field">
+    <%= f.label :pagamento %><br />
+    <%= f.text_field :pagamento %>
+  </div>
+  <div class="field">
+    <%= f.label :comunicazioni %><br />
+    <%= f.text_area :comunicazioni %>
+  </div>
+  <div class="field">
+    <%= f.label :codicefiscale %><br />
+    <%= f.text_field :codicefiscale %>
+  </div>
+  <div class="field">
+    <%= f.label :partitaiva %><br />
+    <%= f.text_field :partitaiva %>
+  </div>
+  <div class="field">
+    <%= f.label :idutenteprincipale %><br />
+    <%= f.text_field :idutenteprincipale %>
+  </div>
+  <div class="field">
+    <%= f.label :annotazioni %><br />
+    <%= f.text_area :annotazioni %>
+  </div>
+  <div class="field">
+    <%= f.label :tariffaprecedente %><br />
+    <%= f.text_field :tariffaprecedente %>
+  </div>
+  <div class="field">
+    <%= f.label :scontoprecedente %><br />
+    <%= f.text_area :scontoprecedente %>
+  </div>
+  <div class="field">
+    <%= f.label :ivaprecedente %><br />
+    <%= f.text_area :ivaprecedente %>
+  </div>
+  <div class="field">
+    <%= f.label :pagamentoprecedente %><br />
+    <%= f.text_field :pagamentoprecedente %>
+  </div>
+  <div class="field">
+    <%= f.label :dataultimopagamento %><br />
+    <%= f.datetime_select :dataultimopagamento %>
+  </div>
+  <div class="field">
+    <%= f.label :dataaccredito %><br />
+    <%= f.datetime_select :dataaccredito %>
+  </div>
+  <div class="field">
+    <%= f.label :annocompetenza %><br />
+    <%= f.text_field :annocompetenza %>
+  </div>
+  <div class="field">
+    <%= f.label :confermaregistrazione %><br />
+    <%= f.check_box :confermaregistrazione %>
+  </div>
+  <div class="field">
+    <%= f.label :abbonato %><br />
+    <%= f.check_box :abbonato %>
+  </div>
+  <div class="field">
+    <%= f.label :disabilitato %><br />
+    <%= f.check_box :disabilitato %>
+  </div>
+  <div class="field">
+    <%= f.label :codicesconto %><br />
+    <%= f.text_field :codicesconto %>
+  </div>
+  <div class="field">
+    <%= f.label :mailsecondaria %><br />
+    <%= f.text_field :mailsecondaria %>
+  </div>
+  <div class="field">
+    <%= f.label :parent %><br />
+    <%= f.text_field :parent %>
+  </div>
+  <div class="field">
+    <%= f.label :crediti %><br />
+    <%= f.text_field :crediti %>
+  </div>
+  <div class="field">
+    <%= f.label :testo1 %><br />
+    <%= f.text_field :testo1 %>
+  </div>
+  <div class="field">
+    <%= f.label :testo2 %><br />
+    <%= f.text_field :testo2 %>
+  </div>
+  <div class="field">
+    <%= f.label :testo3 %><br />
+    <%= f.text_field :testo3 %>
+  </div>
+  <div class="field">
+    <%= f.label :numero1 %><br />
+    <%= f.text_area :numero1 %>
+  </div>
+  <div class="field">
+    <%= f.label :numero2 %><br />
+    <%= f.text_area :numero2 %>
+  </div>
+  <div class="field">
+    <%= f.label :numero3 %><br />
+    <%= f.text_area :numero3 %>
+  </div>
+  <div class="field">
+    <%= f.label :data1 %><br />
+    <%= f.datetime_select :data1 %>
+  </div>
+  <div class="field">
+    <%= f.label :data2 %><br />
+    <%= f.datetime_select :data2 %>
+  </div>
+  <div class="field">
+    <%= f.label :data3 %><br />
+    <%= f.datetime_select :data3 %>
+  </div>
+  <div class="field">
+    <%= f.label :flag1 %><br />
+    <%= f.check_box :flag1 %>
+  </div>
+  <div class="field">
+    <%= f.label :flag2 %><br />
+    <%= f.check_box :flag2 %>
+  </div>
+  <div class="field">
+    <%= f.label :flag3 %><br />
+    <%= f.check_box :flag3 %>
+  </div>
+  <div class="field">
+    <%= f.label :poweruser %><br />
+    <%= f.check_box :poweruser %>
+  </div>
+  <div class="field">
+    <%= f.label :numeroregistrazioneconi %><br />
+    <%= f.text_field :numeroregistrazioneconi %>
+  </div>
+  <div class="field">
+    <%= f.label :forum_redattore %><br />
+    <%= f.check_box :forum_redattore %>
+  </div>
+  <div class="field">
+    <%= f.label :forum_notifica %><br />
+    <%= f.check_box :forum_notifica %>
+  </div>
+  <div class="field">
+    <%= f.label :gruppi_utenti_id %><br />
+    <%= f.text_field :gruppi_utenti_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

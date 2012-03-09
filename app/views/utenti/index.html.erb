@@ -1,0 +1,163 @@
+<h1>Listing utenti</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Codice</th>
+    <th>Iva</th>
+    <th>Nome</th>
+    <th>Titolo</th>
+    <th>Soc</th>
+    <th>Organismo</th>
+    <th>Siglaorganismo</th>
+    <th>Affiliata</th>
+    <th>Sede</th>
+    <th>Indirizzo</th>
+    <th>Telefono</th>
+    <th>Fax</th>
+    <th>Mail</th>
+    <th>Login</th>
+    <th>Pwd</th>
+    <th>Registrato</th>
+    <th>Data</th>
+    <th>Datascadenza</th>
+    <th>Cap</th>
+    <th>Prov</th>
+    <th>Note</th>
+    <th>Pagato</th>
+    <th>Datapag</th>
+    <th>Notepag</th>
+    <th>N fatt</th>
+    <th>Sez</th>
+    <th>Numero pi o cf</th>
+    <th>Campounauto</th>
+    <th>Tariffa</th>
+    <th>Sc</th>
+    <th>Imp</th>
+    <th>Iva </th>
+    <th>Totale fattura</th>
+    <th>Pagamento</th>
+    <th>Comunicazioni</th>
+    <th>Codicefiscale</th>
+    <th>Partitaiva</th>
+    <th>Idutenteprincipale</th>
+    <th>Annotazioni</th>
+    <th>Tariffaprecedente</th>
+    <th>Scontoprecedente</th>
+    <th>Ivaprecedente</th>
+    <th>Pagamentoprecedente</th>
+    <th>Dataultimopagamento</th>
+    <th>Dataaccredito</th>
+    <th>Annocompetenza</th>
+    <th>Confermaregistrazione</th>
+    <th>Abbonato</th>
+    <th>Disabilitato</th>
+    <th>Codicesconto</th>
+    <th>Mailsecondaria</th>
+    <th>Parent</th>
+    <th>Crediti</th>
+    <th>Testo1</th>
+    <th>Testo2</th>
+    <th>Testo3</th>
+    <th>Numero1</th>
+    <th>Numero2</th>
+    <th>Numero3</th>
+    <th>Data1</th>
+    <th>Data2</th>
+    <th>Data3</th>
+    <th>Flag1</th>
+    <th>Flag2</th>
+    <th>Flag3</th>
+    <th>Poweruser</th>
+    <th>Numeroregistrazioneconi</th>
+    <th>Forum redattore</th>
+    <th>Forum notifica</th>
+    <th>Gruppi utenti</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @utenti.each do |utente| %>
+  <tr>
+    <td><%= utente.id %></td>
+    <td><%= utente.codice %></td>
+    <td><%= utente.iva %></td>
+    <td><%= utente.nome %></td>
+    <td><%= utente.titolo %></td>
+    <td><%= utente.soc %></td>
+    <td><%= utente.organismo %></td>
+    <td><%= utente.siglaorganismo %></td>
+    <td><%= utente.affiliata %></td>
+    <td><%= utente.sede %></td>
+    <td><%= utente.indirizzo %></td>
+    <td><%= utente.telefono %></td>
+    <td><%= utente.fax %></td>
+    <td><%= utente.mail %></td>
+    <td><%= utente.login %></td>
+    <td><%= utente.pwd %></td>
+    <td><%= utente.registrato %></td>
+    <td><%= utente.data %></td>
+    <td><%= utente.datascadenza %></td>
+    <td><%= utente.cap %></td>
+    <td><%= utente.prov %></td>
+    <td><%= utente.note %></td>
+    <td><%= utente.pagato %></td>
+    <td><%= utente.datapag %></td>
+    <td><%= utente.notepag %></td>
+    <td><%= utente.n_fatt %></td>
+    <td><%= utente.sez %></td>
+    <td><%= utente.numero_pi_o_cf %></td>
+    <td><%= utente.campounauto %></td>
+    <td><%= utente.tariffa %></td>
+    <td><%= utente.sc %></td>
+    <td><%= utente.imp %></td>
+    <td><%= utente.iva_ %></td>
+    <td><%= utente.totale_fattura %></td>
+    <td><%= utente.pagamento %></td>
+    <td><%= utente.comunicazioni %></td>
+    <td><%= utente.codicefiscale %></td>
+    <td><%= utente.partitaiva %></td>
+    <td><%= utente.idutenteprincipale %></td>
+    <td><%= utente.annotazioni %></td>
+    <td><%= utente.tariffaprecedente %></td>
+    <td><%= utente.scontoprecedente %></td>
+    <td><%= utente.ivaprecedente %></td>
+    <td><%= utente.pagamentoprecedente %></td>
+    <td><%= utente.dataultimopagamento %></td>
+    <td><%= utente.dataaccredito %></td>
+    <td><%= utente.annocompetenza %></td>
+    <td><%= utente.confermaregistrazione %></td>
+    <td><%= utente.abbonato %></td>
+    <td><%= utente.disabilitato %></td>
+    <td><%= utente.codicesconto %></td>
+    <td><%= utente.mailsecondaria %></td>
+    <td><%= utente.parent %></td>
+    <td><%= utente.crediti %></td>
+    <td><%= utente.testo1 %></td>
+    <td><%= utente.testo2 %></td>
+    <td><%= utente.testo3 %></td>
+    <td><%= utente.numero1 %></td>
+    <td><%= utente.numero2 %></td>
+    <td><%= utente.numero3 %></td>
+    <td><%= utente.data1 %></td>
+    <td><%= utente.data2 %></td>
+    <td><%= utente.data3 %></td>
+    <td><%= utente.flag1 %></td>
+    <td><%= utente.flag2 %></td>
+    <td><%= utente.flag3 %></td>
+    <td><%= utente.poweruser %></td>
+    <td><%= utente.numeroregistrazioneconi %></td>
+    <td><%= utente.forum_redattore %></td>
+    <td><%= utente.forum_notifica %></td>
+    <td><%= utente.gruppi_utenti_id %></td>
+    <td><%= link_to 'Show', utente %></td>
+    <td><%= link_to 'Edit', edit_utente_path(utente) %></td>
+    <td><%= link_to 'Destroy', utente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Utente', new_utente_path %>
