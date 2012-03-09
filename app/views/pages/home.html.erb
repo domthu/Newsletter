@@ -11,15 +11,16 @@
       This is the home page --- sto facendo una prova...
 	  <br />
 <ul>
-<% for sezione in @sezioni %>
-	<li><%=link_to  sezione.sezione, :controller=>"sezioni", :action=>"show", :id=>sezione.id %> ( visibile?: <%= sezione.se_visibile %>)</li>
-		
-
-
-<% end %>
-<% for categoria in @categorie  %>
-			<li><%=link_to  categoria.categoria, :controller=>"categorie", :action=>"show", :id=>categoria.id %></li>
-
+<% for x in @sezioni %>
+	<li><%=link_to  x.sezione, :controller=>"sezioni", :action=>"show", :id=>x.id %> ( visibile?: <%= x.se_visibile %>)
+    <% if x.get_categorie.count() > 0 %>
+        <ul>
+        <% for categoria in x.get_categorie  %>
+            <li style="list-style: square inside; padding:10px; color:red;"><%=link_to  categoria.categoria, :controller=>"categorie", :action=>"show", :id=>categoria.id %></li>
+        <% end %>
+        </ul>
+    <% end %>
+    </li>
 
 <% end %>
 </ul>
