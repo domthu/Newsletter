@@ -1,0 +1,49 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  codice: MyString
+  organismo: MyString
+  siglaorganismo: MyString
+  regione: 1.5
+  provincia: 1
+  datascadenza: 2012-03-07 00:34:11
+  parentorganismo: 1
+  testo1: MyString
+  testo2: MyString
+  testo3: MyString
+  numero1: MyText
+  numero2: MyText
+  numero3: MyText
+  data1: 2012-03-07 00:34:11
+  data2: 2012-03-07 00:34:11
+  data3: 2012-03-07 00:34:11
+  flag1: false
+  flag2: false
+  flag3: false
+  richiedinumeroregistrazione: false
+  gruppi_utenti_id: 1
+
+two:
+  id: 1
+  codice: MyString
+  organismo: MyString
+  siglaorganismo: MyString
+  regione: 1.5
+  provincia: 1
+  datascadenza: 2012-03-07 00:34:11
+  parentorganismo: 1
+  testo1: MyString
+  testo2: MyString
+  testo3: MyString
+  numero1: MyText
+  numero2: MyText
+  numero3: MyText
+  data1: 2012-03-07 00:34:11
+  data2: 2012-03-07 00:34:11
+  data3: 2012-03-07 00:34:11
+  flag1: false
+  flag2: false
+  flag3: false
+  richiedinumeroregistrazione: false
+  gruppi_utenti_id: 1

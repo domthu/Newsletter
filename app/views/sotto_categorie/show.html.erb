@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Categorie:</b>
+  <%= @sotto_categoria.categorie_id %>
+</p>
+
+<p>
+  <b>Id:</b>
+  <%= @sotto_categoria.id %>
+</p>
+
+<p>
+  <b>Ca categoria:</b>
+  <%= @sotto_categoria.ca_categoria %>
+</p>
+
+<p>
+  <b>Sottocategoria:</b>
+  <%= @sotto_categoria.sottocategoria %>
+</p>
+
+<p>
+  <b>Protetto:</b>
+  <%= @sotto_categoria.protetto %>
+</p>
+
+<p>
+  <b>Ordinamento:</b>
+  <%= @sotto_categoria.ordinamento %>
+</p>
+
+<p>
+  <b>Data scadenza:</b>
+  <%= @sotto_categoria.data_scadenza %>
+</p>
+
+
+<%= link_to 'Edit', edit_sotto_categoria_path(@sotto_categoria) %> |
+<%= link_to 'Back', sotto_categorie_path %>

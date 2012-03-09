@@ -1,0 +1,73 @@
+<%= form_for(@gruppi_utente) do |f| %>
+  <% if @gruppi_utente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gruppi_utente.errors.count, "error") %> prohibited this gruppi_utente from being saved:</h2>
+
+      <ul>
+      <% @gruppi_utente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :cu_categoriautente %><br />
+    <%= f.text_field :cu_categoriautente %>
+  </div>
+  <div class="field">
+    <%= f.label :ragione_sociale %><br />
+    <%= f.text_field :ragione_sociale %>
+  </div>
+  <div class="field">
+    <%= f.label :indirizzo %><br />
+    <%= f.text_field :indirizzo %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :presidente %><br />
+    <%= f.text_field :presidente %>
+  </div>
+  <div class="field">
+    <%= f.label :referente %><br />
+    <%= f.text_field :referente %>
+  </div>
+  <div class="field">
+    <%= f.label :consulente %><br />
+    <%= f.text_field :consulente %>
+  </div>
+  <div class="field">
+    <%= f.label :logo %><br />
+    <%= f.text_field :logo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_alt %><br />
+    <%= f.text_field :telefono_alt %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :comunicazioni %><br />
+    <%= f.text_area :comunicazioni %>
+  </div>
+  <div class="field">
+    <%= f.label :email_alt %><br />
+    <%= f.text_field :email_alt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<%= form_for(@sezione) do |f| %>
+  <% if @sezione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sezione.errors.count, "error") %> prohibited this sezione from being saved:</h2>
+
+      <ul>
+      <% @sezione.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :sezione %><br />
+    <%= f.text_field :sezione %>
+  </div>
+  <div class="field">
+    <%= f.label :ordinamento %><br />
+    <%= f.text_field :ordinamento %>
+  </div>
+  <div class="field">
+    <%= f.label :se_visibile %><br />
+    <%= f.check_box :se_visibile %>
+  </div>
+  <div class="field">
+    <%= f.label :immagine %><br />
+    <%= f.text_field :immagine %>
+  </div>
+  <div class="field">
+    <%= f.label :style %><br />
+    <%= f.text_field :style %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

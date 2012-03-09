@@ -1,0 +1,105 @@
+<%= form_for(@organismi_associato) do |f| %>
+  <% if @organismi_associato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@organismi_associato.errors.count, "error") %> prohibited this organismi_associato from being saved:</h2>
+
+      <ul>
+      <% @organismi_associato.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :codice %><br />
+    <%= f.text_field :codice %>
+  </div>
+  <div class="field">
+    <%= f.label :organismo %><br />
+    <%= f.text_field :organismo %>
+  </div>
+  <div class="field">
+    <%= f.label :siglaorganismo %><br />
+    <%= f.text_field :siglaorganismo %>
+  </div>
+  <div class="field">
+    <%= f.label :regione %><br />
+    <%= f.text_field :regione %>
+  </div>
+  <div class="field">
+    <%= f.label :provincia %><br />
+    <%= f.text_field :provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :datascadenza %><br />
+    <%= f.datetime_select :datascadenza %>
+  </div>
+  <div class="field">
+    <%= f.label :parentorganismo %><br />
+    <%= f.text_field :parentorganismo %>
+  </div>
+  <div class="field">
+    <%= f.label :testo1 %><br />
+    <%= f.text_field :testo1 %>
+  </div>
+  <div class="field">
+    <%= f.label :testo2 %><br />
+    <%= f.text_field :testo2 %>
+  </div>
+  <div class="field">
+    <%= f.label :testo3 %><br />
+    <%= f.text_field :testo3 %>
+  </div>
+  <div class="field">
+    <%= f.label :numero1 %><br />
+    <%= f.text_area :numero1 %>
+  </div>
+  <div class="field">
+    <%= f.label :numero2 %><br />
+    <%= f.text_area :numero2 %>
+  </div>
+  <div class="field">
+    <%= f.label :numero3 %><br />
+    <%= f.text_area :numero3 %>
+  </div>
+  <div class="field">
+    <%= f.label :data1 %><br />
+    <%= f.datetime_select :data1 %>
+  </div>
+  <div class="field">
+    <%= f.label :data2 %><br />
+    <%= f.datetime_select :data2 %>
+  </div>
+  <div class="field">
+    <%= f.label :data3 %><br />
+    <%= f.datetime_select :data3 %>
+  </div>
+  <div class="field">
+    <%= f.label :flag1 %><br />
+    <%= f.check_box :flag1 %>
+  </div>
+  <div class="field">
+    <%= f.label :flag2 %><br />
+    <%= f.check_box :flag2 %>
+  </div>
+  <div class="field">
+    <%= f.label :flag3 %><br />
+    <%= f.check_box :flag3 %>
+  </div>
+  <div class="field">
+    <%= f.label :richiedinumeroregistrazione %><br />
+    <%= f.check_box :richiedinumeroregistrazione %>
+  </div>
+  <div class="field">
+    <%= f.label :gruppi_utenti_id %><br />
+    <%= f.text_field :gruppi_utenti_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

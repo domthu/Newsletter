@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @edizione.id %>
+</p>
+
+<p>
+  <b>Titolo:</b>
+  <%= @edizione.titolo %>
+</p>
+
+<p>
+  <b>Data dal:</b>
+  <%= @edizione.data_dal %>
+</p>
+
+<p>
+  <b>Data al:</b>
+  <%= @edizione.data_al %>
+</p>
+
+<p>
+  <b>Search key:</b>
+  <%= @edizione.search_key %>
+</p>
+
+
+<%= link_to 'Edit', edit_edizione_path(@edizione) %> |
+<%= link_to 'Back', edizioni_path %>

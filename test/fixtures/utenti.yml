@@ -1,0 +1,147 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  codice: MyString
+  iva: MyString
+  nome: MyString
+  titolo: MyString
+  soc: MyString
+  organismo: MyString
+  siglaorganismo: MyString
+  affiliata: MyString
+  sede: MyString
+  indirizzo: MyString
+  telefono: MyString
+  fax: MyString
+  mail: MyString
+  login: MyString
+  pwd: MyString
+  registrato: MyString
+  data: MyString
+  datascadenza: 2012-03-07 00:36:12
+  cap: MyString
+  prov: MyString
+  note: MyText
+  pagato: MyString
+  datapag: 2012-03-07 00:36:12
+  notepag: MyText
+  n_fatt: MyString
+  sez: MyString
+  numero_pi_o_cf: MyString
+  campounauto: MyString
+  tariffa: MyString
+  sc: MyString
+  imp: MyString
+  iva_: MyString
+  totale_fattura: MyString
+  pagamento: MyString
+  comunicazioni: MyText
+  codicefiscale: MyString
+  partitaiva: MyString
+  idutenteprincipale: 1
+  annotazioni: MyText
+  tariffaprecedente: 1.5
+  scontoprecedente: MyText
+  ivaprecedente: MyText
+  pagamentoprecedente: MyString
+  dataultimopagamento: 2012-03-07 00:36:12
+  dataaccredito: 2012-03-07 00:36:12
+  annocompetenza: 1
+  confermaregistrazione: false
+  abbonato: false
+  disabilitato: false
+  codicesconto: MyString
+  mailsecondaria: MyString
+  parent: 1
+  crediti: 1
+  testo1: MyString
+  testo2: MyString
+  testo3: MyString
+  numero1: MyText
+  numero2: MyText
+  numero3: MyText
+  data1: 2012-03-07 00:36:12
+  data2: 2012-03-07 00:36:12
+  data3: 2012-03-07 00:36:12
+  flag1: false
+  flag2: false
+  flag3: false
+  poweruser: false
+  numeroregistrazioneconi: MyString
+  forum_redattore: false
+  forum_notifica: false
+  gruppi_utenti_id: 1
+
+two:
+  id: 1
+  codice: MyString
+  iva: MyString
+  nome: MyString
+  titolo: MyString
+  soc: MyString
+  organismo: MyString
+  siglaorganismo: MyString
+  affiliata: MyString
+  sede: MyString
+  indirizzo: MyString
+  telefono: MyString
+  fax: MyString
+  mail: MyString
+  login: MyString
+  pwd: MyString
+  registrato: MyString
+  data: MyString
+  datascadenza: 2012-03-07 00:36:12
+  cap: MyString
+  prov: MyString
+  note: MyText
+  pagato: MyString
+  datapag: 2012-03-07 00:36:12
+  notepag: MyText
+  n_fatt: MyString
+  sez: MyString
+  numero_pi_o_cf: MyString
+  campounauto: MyString
+  tariffa: MyString
+  sc: MyString
+  imp: MyString
+  iva_: MyString
+  totale_fattura: MyString
+  pagamento: MyString
+  comunicazioni: MyText
+  codicefiscale: MyString
+  partitaiva: MyString
+  idutenteprincipale: 1
+  annotazioni: MyText
+  tariffaprecedente: 1.5
+  scontoprecedente: MyText
+  ivaprecedente: MyText
+  pagamentoprecedente: MyString
+  dataultimopagamento: 2012-03-07 00:36:12
+  dataaccredito: 2012-03-07 00:36:12
+  annocompetenza: 1
+  confermaregistrazione: false
+  abbonato: false
+  disabilitato: false
+  codicesconto: MyString
+  mailsecondaria: MyString
+  parent: 1
+  crediti: 1
+  testo1: MyString
+  testo2: MyString
+  testo3: MyString
+  numero1: MyText
+  numero2: MyText
+  numero3: MyText
+  data1: 2012-03-07 00:36:12
+  data2: 2012-03-07 00:36:12
+  data3: 2012-03-07 00:36:12
+  flag1: false
+  flag2: false
+  flag3: false
+  poweruser: false
+  numeroregistrazioneconi: MyString
+  forum_redattore: false
+  forum_notifica: false
+  gruppi_utenti_id: 1

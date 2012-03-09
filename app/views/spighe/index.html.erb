@@ -1,0 +1,33 @@
+<h1>Listing spighe</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Utenti</th>
+    <th>Contenuti</th>
+    <th>Tipo</th>
+    <th>Numero spighe</th>
+    <th>Data inserimento</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spighe.each do |spiga| %>
+  <tr>
+    <td><%= spiga.id %></td>
+    <td><%= spiga.utenti_id %></td>
+    <td><%= spiga.contenuti_id %></td>
+    <td><%= spiga.tipo %></td>
+    <td><%= spiga.numero_spighe %></td>
+    <td><%= spiga.data_inserimento %></td>
+    <td><%= link_to 'Show', spiga %></td>
+    <td><%= link_to 'Edit', edit_spiga_path(spiga) %></td>
+    <td><%= link_to 'Destroy', spiga, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spiga', new_spiga_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @spiga.id %>
+</p>
+
+<p>
+  <b>Utenti:</b>
+  <%= @spiga.utenti_id %>
+</p>
+
+<p>
+  <b>Contenuti:</b>
+  <%= @spiga.contenuti_id %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @spiga.tipo %>
+</p>
+
+<p>
+  <b>Numero spighe:</b>
+  <%= @spiga.numero_spighe %>
+</p>
+
+<p>
+  <b>Data inserimento:</b>
+  <%= @spiga.data_inserimento %>
+</p>
+
+
+<%= link_to 'Edit', edit_spiga_path(@spiga) %> |
+<%= link_to 'Back', spighe_path %>

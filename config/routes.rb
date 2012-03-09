@@ -1,19 +1,50 @@
 Newsletter::Application.routes.draw do
-  resources :utentis
 
-  resources :spighes
+  match '/contatti', :to => 'pages#contatti'
+  match '/about',   :to => 'pages#about'
+  root :to => 'pages#home'
+  
+  get "pages/about"
 
-  resources :sotto_categories
+  get "pages/home"
+  get "pages/contatti"
+  resources :pages
+  
+  resources :utenti
 
-  resources :sezionis
+  resources :spighe
 
-  resources :edizionis
+  resources :sotto_categorie
 
-  resources :allegatis
+  resources :sezioni
 
-  resources :contenutis
+  resources :regioni_province
 
-  resources :categories
+  resources :regioni
+
+  resources :province
+
+  resources :organismi_tipi
+
+  resources :organismi_associati
+
+  resources :organismi
+
+  resources :gruppi_utenti_banners
+
+  resources :gruppi_utenti
+
+  resources :gruppi_banners
+
+  resources :edizioni
+
+  resources :contenuti
+
+  resources :categorie
+
+  resources :allegati
+  
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

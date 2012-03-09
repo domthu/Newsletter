@@ -1,0 +1,29 @@
+<%= form_for(@gruppi_utenti_banner) do |f| %>
+  <% if @gruppi_utenti_banner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gruppi_utenti_banner.errors.count, "error") %> prohibited this gruppi_utenti_banner from being saved:</h2>
+
+      <ul>
+      <% @gruppi_utenti_banner.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gruppi_utenti_id %><br />
+    <%= f.text_field :gruppi_utenti_id %>
+  </div>
+  <div class="field">
+    <%= f.label :banners_id %><br />
+    <%= f.text_field :banners_id %>
+  </div>
+  <div class="field">
+    <%= f.label :se_visibile %><br />
+    <%= f.check_box :se_visibile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

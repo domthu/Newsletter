@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+ <%= title %>
+ 
+  </head>
+  <body>
+    <h1><%# @title %></h1>
+    <p>
+      This is the home page --- sto facendo una prova...
+	  <br />
+<ul>
+<% for sezione in @sezioni %>
+	<li><%=link_to  sezione.sezione, :controller=>"sezioni", :action=>"show", :id=>sezione.id %> ( visibile?: <%= sezione.se_visibile %>)</li>
+		
+
+
+<% end %>
+<% for categoria in @categorie  %>
+			<li><%=link_to  categoria.categoria, :controller=>"categorie", :action=>"show", :id=>categoria.id %></li>
+
+
+<% end %>
+</ul>
+
+	  
+    </p>
+	<p>       <a href="http://localhost:3000/pages/about">goto... about</a>.
+	   <a href="http://localhost:3000/pages/contatti">goto... contatti</a>.
+	   </p> 
+   
+  </body>
+</html>

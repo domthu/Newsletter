@@ -1,0 +1,25 @@
+<%= form_for(@regioni_provincia) do |f| %>
+  <% if @regioni_provincia.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@regioni_provincia.errors.count, "error") %> prohibited this regioni_provincia from being saved:</h2>
+
+      <ul>
+      <% @regioni_provincia.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idregione %><br />
+    <%= f.text_field :idregione %>
+  </div>
+  <div class="field">
+    <%= f.label :idprovincia %><br />
+    <%= f.text_field :idprovincia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

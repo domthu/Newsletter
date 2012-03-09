@@ -1,0 +1,65 @@
+<h1>Listing organismi_associati</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Codice</th>
+    <th>Organismo</th>
+    <th>Siglaorganismo</th>
+    <th>Regione</th>
+    <th>Provincia</th>
+    <th>Datascadenza</th>
+    <th>Parentorganismo</th>
+    <th>Testo1</th>
+    <th>Testo2</th>
+    <th>Testo3</th>
+    <th>Numero1</th>
+    <th>Numero2</th>
+    <th>Numero3</th>
+    <th>Data1</th>
+    <th>Data2</th>
+    <th>Data3</th>
+    <th>Flag1</th>
+    <th>Flag2</th>
+    <th>Flag3</th>
+    <th>Richiedinumeroregistrazione</th>
+    <th>Gruppi utenti</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organismi_associati.each do |organismi_associato| %>
+  <tr>
+    <td><%= organismi_associato.id %></td>
+    <td><%= organismi_associato.codice %></td>
+    <td><%= organismi_associato.organismo %></td>
+    <td><%= organismi_associato.siglaorganismo %></td>
+    <td><%= organismi_associato.regione %></td>
+    <td><%= organismi_associato.provincia %></td>
+    <td><%= organismi_associato.datascadenza %></td>
+    <td><%= organismi_associato.parentorganismo %></td>
+    <td><%= organismi_associato.testo1 %></td>
+    <td><%= organismi_associato.testo2 %></td>
+    <td><%= organismi_associato.testo3 %></td>
+    <td><%= organismi_associato.numero1 %></td>
+    <td><%= organismi_associato.numero2 %></td>
+    <td><%= organismi_associato.numero3 %></td>
+    <td><%= organismi_associato.data1 %></td>
+    <td><%= organismi_associato.data2 %></td>
+    <td><%= organismi_associato.data3 %></td>
+    <td><%= organismi_associato.flag1 %></td>
+    <td><%= organismi_associato.flag2 %></td>
+    <td><%= organismi_associato.flag3 %></td>
+    <td><%= organismi_associato.richiedinumeroregistrazione %></td>
+    <td><%= organismi_associato.gruppi_utenti_id %></td>
+    <td><%= link_to 'Show', organismi_associato %></td>
+    <td><%= link_to 'Edit', edit_organismi_associato_path(organismi_associato) %></td>
+    <td><%= link_to 'Destroy', organismi_associato, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organismi associato', new_organismi_associato_path %>
