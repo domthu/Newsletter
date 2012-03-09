@@ -12,16 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
-  </div>
-  <div class="field">
     <%= f.label :categoria %><br />
     <%= f.text_field :categoria %>
   </div>
   <div class="field">
-    <%= f.label :ca_sezione %><br />
-    <%= f.text_field :ca_sezione %>
+    <%= f.label :CA_Sezione %><br />
+    <%= f.text_field :CA_Sezione %>
   </div>
   <div class="field">
     <%= f.label :protetto %><br />
@@ -31,13 +27,9 @@
     <%= f.label :ordinamento %><br />
     <%= f.text_field :ordinamento %>
   </div>
-  <div class="field">
-    <%= f.label :ca_nuovilavori %><br />
-    <%= f.check_box :ca_nuovilavori %>
-  </div>
-  <div class="field">
-    <%= f.label :sezioni_id %><br />
-    <%= f.text_field :sezioni_id %>
+   <div class="field">
+       <%= f.label :sezioni_id %><br />
+	 <%= collection_select(:categoria, :sezioni_id,   Sezione.find(:all, :order => "sezione") , :id, :sezione) %>
   </div>
   <div class="actions">
     <%= f.submit %>
