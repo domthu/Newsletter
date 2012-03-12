@@ -5,9 +5,10 @@
     <th>Id</th>
     <th>Sezione</th>
     <th>Ordinamento</th>
-    <th>Se visibile</th>
+
     <th>Immagine</th>
     <th>Style</th>
+     <th>Se visibile</th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,9 +19,9 @@
     <td><%= sezione.id %></td>
     <td><%= sezione.sezione %></td>
     <td><%= sezione.ordinamento %></td>
-    <td><%= sezione.se_visibile %></td>
-    <td><%= sezione.immagine %></td>
+      <td><%= sezione.immagine %></td>
     <td><%= sezione.style %></td>
+     <td><%= sezione.se_visibile %></td>
     <td><%= link_to 'Show', sezione %></td>
     <td><%= link_to 'Edit', edit_sezione_path(sezione) %></td>
     <td><%= link_to 'Destroy', sezione, :confirm => 'Are you sure?', :method => :delete %></td>

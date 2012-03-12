@@ -15,10 +15,7 @@
   <%= @sezione.ordinamento %>
 </p>
 
-<p>
-  <b>Se visibile:</b>
-  <%= @sezione.se_visibile %>
-</p>
+
 
 <p>
   <b>Immagine:</b>
@@ -29,7 +26,10 @@
   <b>Style:</b>
   <%= @sezione.style %>
 </p>
-
+  <p>
+  <b>Se visibile:</b>
+  <%= @sezione.se_visibile %>
+</p>
 
 <%= link_to 'Edit', edit_sezione_path(@sezione) %> |
 <%= link_to 'Back', sezioni_path %>

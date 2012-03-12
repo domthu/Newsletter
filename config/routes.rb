@@ -3,7 +3,7 @@ Newsletter::Application.routes.draw do
 
   match '/contatti', :to => 'pages#contatti'
   match '/about',   :to => 'pages#about'
-  root :to => 'pages#home'
+  root :to => 'contenuti#index'
   
   get "pages/about"
 

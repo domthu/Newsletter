@@ -2,8 +2,8 @@ class ContenutiController < ApplicationController
   # GET /contenuti
   # GET /contenuti.xml
   def index
-    @contenuti = Contenuto.all
-
+   # @contenuti = Contenuto.all
+       @contenuti = Contenuto.paginate(:page => params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @contenuti }

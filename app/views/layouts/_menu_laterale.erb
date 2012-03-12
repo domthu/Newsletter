@@ -1,36 +1,28 @@
 <div class="fs-box fs-vmenublock">
     <div class="fs-box-body fs-vmenublock-body">
-                <div class="fs-bar fs-vmenublockheader">
-                    <h3 class="t">Menu verticale</h3>
-                </div>
-                <div class="fs-box fs-vmenublockcontent">
-                    <div class="fs-box-body fs-vmenublockcontent-body">
+        <div class="fs-bar fs-vmenublockheader">
+                <h3 class="t">Menu verticale</h3>
+        </div>
+        <div class="fs-box fs-vmenublockcontent">
+            <div class="fs-box-body fs-vmenublockcontent-body">
                 <ul class="fs-vmenu">
-	<li>
-		<a href="./new-page.html" class="active">Sezioni</a>
-		<ul class="active">
-			<li>
-                <a href="./new-page/new-page.html">Subpage 1</a>
-
-            </li>
-			<li>
-                <a href="./new-page/new-page-2.html">Subpage 2</a>
-
-            </li>
-			<li>
-                <a href="./new-page/new-page-3.html">Subpage 3</a>
-
-            </li>
-		</ul>
-	</li>	
-	<li>
-		<a href="./new-page-2.html">Page 2</a>
-	</li>	
-</ul>
-                
-                                		<div class="cleared"></div>
-                    </div>
-                </div>
-		<div class="cleared"></div>
-    </div>
+                    <% for x in @sezioni %>
+	                    <li  >
+		                <%=link_to  x.sezione,{ :controller=>"sezioni", :action=>"show" , :id=>x.id },:class =>"active" %>
+                        <% if  x.get_categorie.count() > 0 %>
+		                    <ul class="active">
+                            <% for categoria in x.get_categorie  %>
+			                    <li>
+                                <%=link_to  categoria.categoria, {:controller=>"categorie", :action=>"show", :id=>categoria.id } %>
+                                </li>
+			                <% end %>
+		                    </ul>
+	                    <% end %>
+                        </li>
+                    <% end %>
+                </ul>
+                <div class="cleared"></div>
+            </div>
+        </div>
+    <div class="cleared"></div>
 </div>

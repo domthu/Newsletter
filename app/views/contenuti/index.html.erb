@@ -1,69 +1,31 @@
-<h1>Listing contenuti</h1>
+<h2 class="fs-postheader" >Contenuti</h2>
 
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Edizioni</th>
-    <th>Categorie</th>
-    <th>Sotto categorie</th>
-    <th>Ordinamento</th>
-    <th>Se sommario</th>
-    <th>Riassunto</th>
-    <th>Co categoria</th>
-    <th>Co sottocategoria</th>
-    <th>Scad mese</th>
-    <th>Scad giorno</th>
-    <th>Scad anno</th>
-    <th>Titolo</th>
-    <th>Testo</th>
-    <th>Data scadenza</th>
-    <th>Riferimento</th>
-    <th>Se visible web</th>
-    <th>Se visible data</th>
-    <th>Se visible newsletter</th>
-    <th>Se protetto</th>
-    <th>Immagine url</th>
-    <th>Titolo no format</th>
-    <th>Testo no format</th>
-    <th>Riassunto no format</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
 
 <% @contenuti.each do |contenuto| %>
-  <tr>
-    <td><%= contenuto.id %></td>
-    <td><%= contenuto.edizioni_id %></td>
-    <td><%= contenuto.categorie_id %></td>
-    <td><%= contenuto.sotto_categorie_id %></td>
-    <td><%= contenuto.ordinamento %></td>
-    <td><%= contenuto.se_sommario %></td>
-    <td><%= contenuto.riassunto %></td>
-    <td><%= contenuto.CO_Categoria %></td>
-    <td><%= contenuto.CO_Sottocategoria %></td>
-    <td><%= contenuto.scad_mese %></td>
-    <td><%= contenuto.scad_giorno %></td>
-    <td><%= contenuto.scad_anno %></td>
-    <td><%= contenuto.titolo %></td>
-    <td><%= contenuto.testo %></td>
-    <td><%= contenuto.data_scadenza %></td>
-    <td><%= contenuto.riferimento %></td>
-    <td><%= contenuto.se_visible_web %></td>
-    <td><%= contenuto.se_visible_data %></td>
-    <td><%= contenuto.se_visible_newsletter %></td>
-    <td><%= contenuto.se_protetto %></td>
-    <td><%= contenuto.immagine_url %></td>
-    <td><%= contenuto.titolo_no_format %></td>
-    <td><%= contenuto.testo_no_format %></td>
-    <td><%= contenuto.riassunto_no_format %></td>
-    <td><%= link_to 'Show', contenuto %></td>
-    <td><%= link_to 'Edit', edit_contenuto_path(contenuto) %></td>
-    <td><%= link_to 'Destroy', contenuto, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+ <h2 class="fs-postheader" > <%= contenuto.titolo_no_format %>  </h2>
+<div class="fs-postheadericons "> scritto da bal bla bla redatto da bla bla pubblicato da bla vorrei linkare le sezioni ma come spesso succede non ci riesco :-(</div>
+<div class="fs-postcontent" >   <%= contenuto.riassunto_no_format %> </div>
+
+<%# <br/>    <table>
+       <th > link non implementati -> </th>
+     <td><%= link_to 'Show', contenuto %> <%#   </td>
+    <td><%= link_to 'Edit', edit_contenuto_path(contenuto) %> <%# </td>
+    <td><%= link_to 'Destroy', contenuto, :confirm => 'Are you sure?', :method => :delete %> <%# </td> </table>
+    %>
+<hr>
+ <br/>
 <% end %>
-</table>
 
-<br />
 
-<%= link_to 'New Contenuto', new_contenuto_path %>
+
+<%#= link_to 'New Contenuto', new_contenuto_path %>
+      <br /><div class="flickr_pagination">
+<div class="page_info">
+
+<%= page_entries_info @messages %>
+    </div>
+
+<%= will_paginate @messages, :container => false %>
+
+</div>

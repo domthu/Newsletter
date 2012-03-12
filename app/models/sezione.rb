@@ -1,5 +1,6 @@
 class Sezione < ActiveRecord::Base
 has_many :categorie
+has_many :contenuti , :through => :categorie
 
 
     def get_categorie
