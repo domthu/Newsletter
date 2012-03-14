@@ -1,6 +1,11 @@
 Newsletter::Application.routes.draw do
 
 
+  devise_for :user
+  #devise_for :users
+
+  resources :ruoli
+
   match '/contatti', :to => 'pages#contatti'
   match '/about',   :to => 'pages#about'
   root :to => 'pages#home'
@@ -45,8 +50,6 @@ Newsletter::Application.routes.draw do
 
   resources :allegati
   
-
-#>>>>>>> 356a91314043444301982a7cf667d2b099bac7fb
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -11,6 +11,9 @@
 ActiveSupport::Inflector.inflections.clear
  ActiveSupport::Inflector.inflections do |inflect|
     #--------------------------inflessioni
+  # ruolo 
+  inflect.plural /^([\w]*)olo$/i, '\1oli'
+  inflect.singular /^([\w]*)oli$/i, '\1olo'
   # contenuto 
   inflect.plural /^([\w]*)uto$/i, '\1uti'
   inflect.singular /^([\w]*)uti$/i, '\1uto'

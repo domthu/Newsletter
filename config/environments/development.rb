@@ -37,5 +37,9 @@ Newsletter::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  # domthu 20120314
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.after_sign_in_path_for = { :host => 'localhost:3000/contatti' }
+  config.after_sign_out_path_for = { :host => 'localhost:3000/about' }
 end
 

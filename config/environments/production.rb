@@ -46,4 +46,9 @@ Newsletter::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # domthu 20120314
+  config.action_mailer.default_url_options = { :host => 'http://fiscosport.it/' }
+  config.after_sign_in_path_for = { :host => 'http://fiscosport.it/contatti' }
+  config.after_sign_out_path_for = { :host => 'http://fiscosport.it/about' }
 end

@@ -1,0 +1,25 @@
+<h1>Listing ruoli</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Descrizione</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ruoli.each do |ruolo| %>
+  <tr>
+    <td><%= ruolo.nome %></td>
+    <td><%= ruolo.descrizione %></td>
+    <td><%= link_to 'Show', ruolo %></td>
+    <td><%= link_to 'Edit', edit_ruolo_path(ruolo) %></td>
+    <td><%= link_to 'Destroy', ruolo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ruolo', new_ruolo_path %>
