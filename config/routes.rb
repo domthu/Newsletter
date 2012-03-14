@@ -3,6 +3,25 @@ Newsletter::Application.routes.draw do
 
   devise_for :user
   #devise_for :users
+#      new_user_session GET    /users/sign_in(.:format)          {:action=>"new", :controller=>"devise/sessions"}
+#          user_session POST   /users/sign_in(.:format)          {:action=>"create", :controller=>"devise/sessions"}
+#  destroy_user_session GET    /users/sign_out(.:format)         {:action=>"destroy", :controller=>"devise/sessions"}
+#         user_password POST   /users/password(.:format)         {:action=>"create", :controller=>"devise/passwords"}
+#     new_user_password GET    /users/password/new(.:format)     {:action=>"new", :controller=>"devise/passwords"}
+#    edit_user_password GET    /users/password/edit(.:format)    {:action=>"edit", :controller=>"devise/passwords"}
+#         user_password PUT    /users/password(.:format)         {:action=>"update", :controller=>"devise/passwords"}
+#     user_registration POST   /users(.:format)                  {:action=>"create", :controller=>"devise/registrations"}
+# new_user_registration GET    /users/sign_up(.:format)          {:action=>"new", :controller=>"devise/registrations"}
+#edit_user_registration GET    /users/edit(.:format)             {:action=>"edit", :controller=>"devise/registrations"}
+#     user_registration PUT    /users(.:format)                  {:action=>"update", :controller=>"devise/registrations"}
+#     user_registration DELETE /users(.:format)                  {:action=>"destroy", :controller=>"devise/registrations"}
+#     user_confirmation POST   /users/confirmation(.:format)     {:action=>"create", :controller=>"devise/confirmations"}
+# new_user_confirmation GET    /users/confirmation/new(.:format) {:action=>"new", :controller=>"devise/confirmations"}
+#     user_confirmation GET    /users/confirmation(.:format)     {:action=>"show", :controller=>"devise/confirmations"}
+#           user_unlock POST   /users/unlock(.:format)           {:action=>"create", :controller=>"devise/unlocks"}
+#       new_user_unlock GET    /users/unlock/new(.:format)       {:action=>"new", :controller=>"devise/unlocks"}
+#           user_unlock GET    /users/unlock(.:format)           {:action=>"show", :controller=>"devise/unlocks"}
+#                  root        /(.:format)                       {:controller=>"home", :action=>"index"}
 
   resources :ruoli
 
